@@ -1,0 +1,14 @@
+{
+  "name": "harper.dev",
+  "owner": {
+    "name": "Harper Reed",
+    "url": "https://harper.dev"
+  },
+  "description": "Harper Reed's personal Claude Code plugin marketplace",
+  "plugins": [
+    {
+      "name": "office",
+      "source": "./"
+    }
+  ]
+}

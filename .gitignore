@@ -1,0 +1,29 @@
+# Logs and temporary files
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if any)
+node_modules/
+
+# Local development
+.env
+.env.local
+
+# User-specific settings (should not be shared)
+*.local.json

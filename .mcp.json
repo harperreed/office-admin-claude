@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "pd": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pipedream/mcp-server@latest"
+      ]
+    },
+    "toki": {
+      "command": "toki",
+      "args": ["mcp"]
+    },
+    "chronicle": {
+      "command": "chronicle",
+      "args": ["mcp"]
+    },
+    "pagen": {
+      "command": "pagen",
+      "args": ["mcp"]
+    }
+  }
+}

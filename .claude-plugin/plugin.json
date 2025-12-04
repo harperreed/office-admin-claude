@@ -1,0 +1,20 @@
+{
+  "name": "office",
+  "version": "1.0.0",
+  "description": "Office - A comprehensive productivity plugin for email management, CRM, and calendar handling with customizable personal style",
+  "author": {
+    "name": "Harper Reed",
+    "url": "https://github.com/harperreed"
+  },
+  "repository": "https://github.com/harperreed/cc-office-plugin",
+  "keywords": [
+    "productivity",
+    "email",
+    "calendar",
+    "crm",
+    "personal-assistant",
+    "mcp",
+    "automation"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "personal": {
+    "name": "Harper Reed",
+    "timezone": "America/Chicago",
+    "workingHours": {
+      "start": "09:30",
+      "end": "16:30",
+      "lunchStart": "12:00",
+      "lunchEnd": "13:30"
+    }
+  },
+  "email": {
+    "tone": "ultra-terse",
+    "signature": "none",
+    "formality": "casual",
+    "responseLength": "minimal",
+    "patterns": [
+      "that works perfect",
+      "sure.",
+      "unsubscribe",
+      "sure. https://harper.lol/schedule/ is my calendar. it is a horrible place."
+    ],
+    "customGuidelines": "Use minimal punctuation. Self-deprecating humor is fine. Never use greetings like 'Hi' or 'Hello'. Get straight to the point. Lowercase is preferred for casual emails."
+  },
+  "calendar": {
+    "defaultDuration": 30,
+    "bufferMinutes": 15,
+    "schedulingLink": "https://harper.lol/schedule/",
+    "autoAddFromEmail": false,
+    "eventNaming": {
+      "includeLocation": true,
+      "includeAttendees": false
+    }
+  },
+  "crm": {
+    "contactTypes": "mixed",
+    "detailLevel": "standard",
+    "autoLogInteractions": true,
+    "trackRelationships": true
+  }
+}
