@@ -1,12 +1,12 @@
-# Office Plugin Configuration Guide
+# Office Admin Configuration Guide
 
-This file explains all the configuration options available in `~/.claude/cc-office-config.json`.
+This file explains all the configuration options available in `~/.claude/office-admin-config.json`.
 
 ## Configuration File Location
 
-Place your configuration at: `~/.claude/cc-office-config.json`
+Place your configuration at: `~/.claude/office-admin-config.json`
 
-The easiest way to create this file is to run: `/setup-office`
+The easiest way to create this file is to run: `/setup-office-admin`
 
 ## Migration from Old Format
 
@@ -343,12 +343,12 @@ Harper
 
 1. **Run setup wizard:**
    ```bash
-   /setup-office
+   /setup-office-admin
    ```
 
 2. **Or copy example:**
    ```bash
-   cp example-config.json ~/.claude/cc-office-config.json
+   cp example-config.json ~/.claude/office-admin-config.json
    ```
 
 3. **Edit the values** to match your style
@@ -445,8 +445,8 @@ Adjust config and test again until it sounds like YOU.
 ```
 
 **Migration Steps:**
-1. Backup your old config: `cp ~/.claude/cc-office-config.json ~/.claude/cc-office-config.json.backup`
-2. Run `/setup-office` to create new format config
+1. Backup your old config: `cp ~/.claude/office-admin-config.json ~/.claude/office-admin-config.json.backup`
+2. Run `/setup-office-admin` to create new format config
 3. Copy any custom values from your backup
 
 ---
@@ -478,7 +478,7 @@ Adjust config and test again until it sounds like YOU.
 
 ## Getting Help
 
-- Run `/setup-office` to interactively configure
+- Run `/setup-office-admin` to interactively configure
 - Test with `/draft-email` and `/triage-email`
 - Check example-config.json for a working example
 - See README.md for more documentation

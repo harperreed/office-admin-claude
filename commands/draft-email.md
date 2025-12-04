@@ -18,7 +18,7 @@ Draft an email in your personal style with guided assistance. Use the office:ema
    - Note any conflicts that need to be resolved
 
 4. **Draft the email:**
-   - Load user's style from `~/.claude/cc-office-config.json`
+   - Load user's style from `~/.claude/office-admin-config.json`
    - Match their tone, formality, and response length preferences
    - Use their common phrases from config
    - Apply signature preference (none/minimal/full)

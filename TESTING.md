@@ -1,6 +1,6 @@
-# CC-Office Plugin Testing Guide
+# Office Admin Plugin Testing Guide
 
-This comprehensive guide covers testing procedures for the cc-office plugin, from pre-installation verification through advanced integration testing.
+This comprehensive guide covers testing procedures for the office-admin plugin, from pre-installation verification through advanced integration testing.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This comprehensive guide covers testing procedures for the cc-office plugin, fro
 
 ## Pre-Installation Checklist
 
-Before installing cc-office, verify these prerequisites:
+Before installing office-admin, verify these prerequisites:
 
 ### 1. Claude Code Environment
 
@@ -120,7 +120,7 @@ ls -la ~/.claude/
 ### Step 1: Add Plugin Marketplace
 
 ```bash
-# Add the cc-office plugin marketplace
+# Add the office-admin plugin marketplace
 /plugin marketplace add harperreed/office-admin-claude
 ```
 
@@ -138,12 +138,12 @@ Should show `harperreed/office-admin-claude` in the list.
 ### Step 2: Install Plugin
 
 ```bash
-/plugin install cc-office
+/plugin install office-admin
 ```
 
 **Expected output:**
 ```
-✓ Installing cc-office plugin...
+✓ Installing office-admin plugin...
 ✓ Plugin installed successfully
 ✓ 4 skills registered
 ✓ 3 commands registered
@@ -156,7 +156,7 @@ Should show `harperreed/office-admin-claude` in the list.
 
 Should show:
 ```
-✓ cc-office (v1.0.0) - active
+✓ office-admin (v1.0.0) - active
   Skills: 4
   Commands: 3
 ```
@@ -171,10 +171,10 @@ Test that skills are registered:
 ```
 
 **Expected skills:**
-- `cc-office:onboarding`
-- `cc-office:email-management`
-- `cc-office:calendar-management`
-- `cc-office:crm-management`
+- `office:onboarding`
+- `office:email-management`
+- `office:calendar-management`
+- `office:crm-management`
 
 ### Step 4: Verify Commands Registration
 
@@ -184,7 +184,7 @@ Test that skills are registered:
 ```
 
 **Expected commands:**
-- `/setup-cc-office`
+- `/setup-office-admin`
 - `/triage-email`
 - `/draft-email`
 
@@ -211,7 +211,7 @@ cc-office should still show as active.
 
 **Command:**
 ```bash
-/setup-cc-office
+/setup-office-admin
 ```
 
 **Test Steps:**
@@ -258,7 +258,7 @@ Should contain personalized style examples.
 
 **Command:**
 ```bash
-/setup-cc-office
+/setup-office-admin
 ```
 
 **Test Steps:**
@@ -294,7 +294,7 @@ echo "invalid json" > ~/.claude/cc-office-config.json
 
 **Expected:**
 - Clear error message about invalid config
-- Suggestion to re-run `/setup-cc-office`
+- Suggestion to re-run `/setup-office-admin`
 
 ---
 
@@ -1217,7 +1217,7 @@ What timezone am I configured for?
 
 **Common Fixes:**
 - Update config timezone
-- Re-run `/setup-cc-office`
+- Re-run `/setup-office-admin`
 - Recreate events after fix
 
 ### Issue 3: CRM Duplicates Created
@@ -1272,7 +1272,7 @@ Draft an email in ultra-terse style
 
 **Common Fixes:**
 - Update email config
-- Re-run `/setup-cc-office`
+- Re-run `/setup-office-admin`
 - Provide examples of preferred style
 
 ### Issue 5: Skills Not Activating
@@ -1450,7 +1450,7 @@ Installation:
 [ ] Claude Code restarted
 
 Onboarding:
-[ ] /setup-cc-office completes successfully
+[ ] /setup-office-admin completes successfully
 [ ] Config file created
 [ ] Style guide created
 [ ] All preferences captured correctly

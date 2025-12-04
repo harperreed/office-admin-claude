@@ -1,7 +1,7 @@
 {
-  "name": "office",
+  "name": "office-admin",
   "version": "1.0.0",
-  "description": "Office - A comprehensive productivity plugin for email management, CRM, and calendar handling with customizable personal style",
+  "description": "Office Admin - A comprehensive productivity plugin for email management, CRM, and calendar handling with customizable personal style",
   "author": {
     "name": "Harper Reed",
     "url": "https://github.com/harperreed"

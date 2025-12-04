@@ -3,7 +3,7 @@ name: office:email-management
 description: Handle email tasks (checking inbox, drafting replies, managing threads, adding events to calendar). Use when working with emails to prevent common mistakes like broken threading or missing recipients.
 ---
 
-# Email Management with CC-Office
+# Email Management with Office Admin
 
 Use this skill when handling:
 - Checking inbox or finding specific emails
@@ -16,13 +16,13 @@ Use this skill when handling:
 
 1. **Always draft, never send** - Save emails as drafts for user review before sending
 2. **Threading is critical** - Replies must appear in the correct conversation thread
-3. **Match user's voice** - Reference their cc-office config for tone and style
+3. **Match user's voice** - Reference their office-admin config for tone and style
 4. **Extract structured data** - Pull event details, action items, contact info from emails
 5. **Proactive calendar integration** - Auto-check conflicts and add events
 
 ## User Style Configuration
 
-Before drafting emails, load the user's style from `~/.claude/cc-office-config.json`:
+Before drafting emails, load the user's style from `~/.claude/office-admin-config.json`:
 
 ```json
 {
@@ -37,7 +37,7 @@ Before drafting emails, load the user's style from `~/.claude/cc-office-config.j
 }
 ```
 
-If config doesn't exist, prompt user to run `/setup-cc-office` first.
+If config doesn't exist, prompt user to run `/setup-office-admin` first.
 
 ## Email Drafting Workflow
 
@@ -278,7 +278,7 @@ Return comprehensive report.
 
 ### ❌ Not Matching User's Voice
 **Problem:** Email doesn't sound like the user
-**Solution:** Reference their cc-office config for tone, formality, patterns
+**Solution:** Reference their office-admin config for tone, formality, patterns
 
 ### ❌ Adding Wrong Signature
 **Problem:** Adding "Best," when user configured "none"
@@ -304,7 +304,7 @@ Return comprehensive report.
 
 Before completing an email task, verify:
 
-- [ ] Loaded user's cc-office config for style preferences
+- [ ] Loaded user's office-admin config for style preferences
 - [ ] Found original email/thread for context
 - [ ] Got thread ID, message ID, AND recipient email if replying
 - [ ] Drafted in user's voice (matched config settings)

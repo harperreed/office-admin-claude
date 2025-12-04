@@ -7,7 +7,7 @@
   "description": "Office productivity plugin for Claude Code - email, calendar, and CRM management",
   "plugins": [
     {
-      "name": "office",
+      "name": "office-admin",
       "source": "./"
     }
   ]

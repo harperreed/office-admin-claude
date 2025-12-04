@@ -9,7 +9,7 @@ Welcome to **Office**! This skill helps you set up your personal productivity st
 
 ## When to Use This Skill
 
-- First time installing cc-office
+- First time installing office-admin
 - Want to update your productivity style preferences
 - Need to configure how email drafts should sound
 - Setting up your working hours and calendar preferences
@@ -84,7 +84,7 @@ Ask about contact management:
 ### Step 5: Generate Configuration
 
 After gathering preferences, create a configuration file at:
-`~/.claude/cc-office-config.json`
+`~/.claude/office-admin-config.json`
 
 **Format:**
 ```json
@@ -143,8 +143,8 @@ After configuration, provide guidance on required MCP servers:
    - Installation: Follow Calendar MCP setup docs
    - Scopes needed: read, write events
 
-3. **CC-Office CRM** (optional) - For contact/company/deal management
-   - Installation: Set up cc-office MCP server
+3. **Pagen CRM** (optional) - For contact/company/deal management
+   - Installation: Set up Pagen MCP server
    - Requires: Database configuration
 
 4. **Notion** (optional) - For advanced note-taking integration
@@ -154,10 +154,10 @@ Provide installation links and next steps.
 
 ### Step 7: Create Personal Style Guide
 
-Generate a markdown file at `~/.claude/docs/cc-office-style.md` with:
+Generate a markdown file at `~/.claude/docs/office-admin-style.md` with:
 
 ```markdown
-# My CC-Office Style Guide
+# My Office Admin Style Guide
 
 ## About Me
 - Name: [User's Name]
@@ -190,12 +190,12 @@ After setup:
 1. Confirm configuration was saved
 2. Show the user their style guide
 3. Suggest they try `/triage-email` or `/draft-email` to test
-4. Remind them they can re-run `/setup-cc-office` to update preferences
+4. Remind them they can re-run `/setup-office-admin` to update preferences
 
 ## Example Interaction
 
 ```
-Assistant: I'm using the cc-office:onboarding skill to help you set up your personal productivity style.
+Assistant: I'm using the office:onboarding skill to help you set up your personal productivity style.
 
 What should I call you?
 

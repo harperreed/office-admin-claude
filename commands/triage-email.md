@@ -6,7 +6,7 @@ Perform bulk email triage on your inbox:
    - **ACTION NEEDED** - Requires response or calendar addition
    - **CALENDAR** - Contains event information (extract and check conflicts)
    - **ARCHIVE** - Informational only, no action needed
-4. For ACTION NEEDED emails, draft replies using your personal style from `~/.claude/cc-office-config.json`
+4. For ACTION NEEDED emails, draft replies using your personal style from `~/.claude/office-admin-config.json`
 5. For CALENDAR emails, proactively add events and check for conflicts using office:calendar-management skill
 6. Present a comprehensive summary organized by priority
 

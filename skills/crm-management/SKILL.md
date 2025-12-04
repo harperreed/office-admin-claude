@@ -3,7 +3,7 @@ name: office:crm-management
 description: Manage contacts, companies, deals, and relationships. Use when adding contacts, logging interactions, or working with CRM data to prevent duplicates and maintain data quality.
 ---
 
-# CC-Office CRM Management
+# Office Admin CRM Management
 
 ## When to Use This Skill
 
@@ -18,7 +18,7 @@ Use this skill ANY time you:
 
 ## User CRM Preferences
 
-Load user preferences from `~/.claude/cc-office-config.json`:
+Load user preferences from `~/.claude/office-admin-config.json`:
 
 ```json
 {

@@ -1,6 +1,6 @@
-# CC-Office: Claude Code Office Productivity Plugin
+# Office Admin: Claude Code Office Productivity Plugin
 
-**CC-Office** is a comprehensive productivity plugin for Claude Code that helps you manage email, calendar, and contacts in your personal style. It learns your communication preferences and handles routine tasks while maintaining your authentic voice.
+**Office Admin** is a comprehensive productivity plugin for Claude Code that helps you manage email, calendar, and contacts in your personal style. It learns your communication preferences and handles routine tasks while maintaining your authentic voice.
 
 ## Features
 
@@ -29,7 +29,7 @@
 
 ### 1. Install MCP Servers
 
-CC-Office requires these MCP servers:
+Office Admin requires these MCP servers:
 
 **Required:**
 - Pipedream (Gmail + Google Calendar)
@@ -51,14 +51,14 @@ Add to `~/.claude/settings.json`:
 
 See [`mcp-servers/README.md`](./mcp-servers/README.md) for detailed setup instructions.
 
-### 2. Install CC-Office Plugin
+### 2. Install Office Admin Plugin
 
 ```bash
 # Add the plugin marketplace
 /plugin marketplace add harperreed/office-admin-claude
 
 # Install the plugin
-/plugin install cc-office
+/plugin install office-admin
 
 # Restart Claude Code
 ```
@@ -66,14 +66,14 @@ See [`mcp-servers/README.md`](./mcp-servers/README.md) for detailed setup instru
 ### 3. Run Onboarding
 
 ```bash
-/setup-cc-office
+/setup-office-admin
 ```
 
 This interactive process will:
 - Ask about your email communication style
 - Configure calendar preferences
 - Set up CRM workflow (if enabled)
-- Create your personal config at `~/.claude/cc-office-config.json`
+- Create your personal config at `~/.claude/office-admin-config.json`
 
 ### 4. Start Using
 
@@ -93,7 +93,7 @@ Try these commands:
 
 ## How It Works
 
-CC-Office consists of four integrated skills that work together:
+Office Admin consists of four integrated skills that work together:
 
 ### Skills
 
@@ -106,13 +106,13 @@ These skills automatically activate when you perform related tasks. You don't ne
 
 ### Slash Commands
 
-- `/setup-cc-office` - Run onboarding (or update preferences)
+- `/setup-office-admin` - Run onboarding (or update preferences)
 - `/triage-email` - Bulk inbox triage with categorization and drafts
 - `/draft-email` - Guided email composition in your style
 
 ## Configuration
 
-Your config is stored at `~/.claude/cc-office-config.json`:
+Your config is stored at `~/.claude/office-admin-config.json`:
 
 ```json
 {
@@ -154,7 +154,7 @@ Your config is stored at `~/.claude/cc-office-config.json`:
 }
 ```
 
-You can edit this file directly or re-run `/setup-cc-office` to update preferences.
+You can edit this file directly or re-run `/setup-office-admin` to update preferences.
 
 ## Example Workflows
 
@@ -262,15 +262,15 @@ Hope you're doing well!
 [Your Name]
 ```
 
-CC-Office will match whichever style you configure.
+Office Admin will match whichever style you configure.
 
 ## Best Practices
 
 1. **Run onboarding first** - Sets up your preferences properly
-2. **Review drafts before sending** - CC-Office creates drafts, you send them
+2. **Review drafts before sending** - Office Admin creates drafts, you send them
 3. **Use bulk triage for efficiency** - Process 10+ emails at once with `/triage-email`
 4. **Let calendar auto-add events** - Enable `autoAddFromEmail` for seamless scheduling
-5. **Keep config updated** - Re-run `/setup-cc-office` as your preferences change
+5. **Keep config updated** - Re-run `/setup-office-admin` as your preferences change
 
 ## Troubleshooting
 
@@ -280,7 +280,7 @@ CC-Office will match whichever style you configure.
 - Try creating the draft manually once to test
 
 ### "Calendar events have wrong timezone"
-- Update `timezone` in `~/.claude/cc-office-config.json`
+- Update `timezone` in `~/.claude/office-admin-config.json`
 - Verify Google Calendar is set to same timezone
 - Re-create the event after fixing config
 
@@ -292,11 +292,11 @@ CC-Office will match whichever style you configure.
 ### "Skills not activating"
 - Restart Claude Code completely
 - Check plugin is installed: `/plugin list`
-- Verify config exists: `cat ~/.claude/cc-office-config.json`
+- Verify config exists: `cat ~/.claude/office-admin-config.json`
 
 ## Development
 
-Want to contribute or customize CC-Office?
+Want to contribute or customize Office Admin?
 
 ```bash
 # Clone the repo
@@ -306,14 +306,14 @@ git clone https://github.com/harperreed/office-admin-claude.git
 cd office-admin-claude
 cat > .claude-plugin/marketplace.json <<EOF
 {
-  "name": "cc-office-dev",
-  "plugins": [{"name": "cc-office", "source": "./"}]
+  "name": "office-admin-dev",
+  "plugins": [{"name": "office-admin", "source": "./"}]
 }
 EOF
 
 # Install in dev mode
 /plugin marketplace add /path/to/office-admin-claude
-/plugin install cc-office@cc-office-dev
+/plugin install office-admin@office-admin-dev
 
 # Make changes and test
 # Restart Claude Code after changes
@@ -332,7 +332,7 @@ office-admin-claude/
 │   ├── crm-management.md     # Contact management
 │   └── calendar-management.md # Scheduling logic
 ├── commands/
-│   ├── setup-cc-office.md    # Onboarding command
+│   ├── setup-office-admin.md # Onboarding command
 │   ├── triage-email.md       # Bulk triage command
 │   └── draft-email.md        # Guided drafting command
 ├── mcp-servers/
@@ -358,4 +358,4 @@ Based on patterns from the [pagen](https://github.com/harperreed/pw) productivit
 
 ---
 
-**CC-Office** - *Your personal office productivity agent, in Claude Code*
+**Office Admin** - *Your personal office productivity agent, in Claude Code*
