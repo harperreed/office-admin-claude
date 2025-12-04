@@ -55,7 +55,7 @@ See [`mcp-servers/README.md`](./mcp-servers/README.md) for detailed setup instru
 
 ```bash
 # Add the plugin marketplace
-/plugin marketplace add harperreed/cc-office-plugin
+/plugin marketplace add harperreed/office-admin-claude
 
 # Install the plugin
 /plugin install cc-office
@@ -300,10 +300,10 @@ Want to contribute or customize CC-Office?
 
 ```bash
 # Clone the repo
-git clone https://github.com/harperreed/cc-office-plugin.git
+git clone https://github.com/harperreed/office-admin-claude.git
 
 # Create development marketplace
-cd cc-office-plugin
+cd office-admin-claude
 cat > .claude-plugin/marketplace.json <<EOF
 {
   "name": "cc-office-dev",
@@ -312,7 +312,7 @@ cat > .claude-plugin/marketplace.json <<EOF
 EOF
 
 # Install in dev mode
-/plugin marketplace add /path/to/cc-office-plugin
+/plugin marketplace add /path/to/office-admin-claude
 /plugin install cc-office@cc-office-dev
 
 # Make changes and test
@@ -322,7 +322,7 @@ EOF
 ### Plugin Structure
 
 ```
-cc-office-plugin/
+office-admin-claude/
 ├── .claude-plugin/
 │   ├── plugin.json          # Plugin manifest
 │   └── marketplace.json      # Dev marketplace config
@@ -352,8 +352,8 @@ Based on patterns from the [pagen](https://github.com/harperreed/pw) productivit
 
 ## Support
 
-- **Issues:** https://github.com/harperreed/cc-office-plugin/issues
-- **Discussions:** https://github.com/harperreed/cc-office-plugin/discussions
+- **Issues:** https://github.com/harperreed/office-admin-claude/issues
+- **Discussions:** https://github.com/harperreed/office-admin-claude/discussions
 - **Twitter:** [@harper](https://twitter.com/harper)
 
 ---

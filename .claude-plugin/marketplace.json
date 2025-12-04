@@ -1,10 +1,10 @@
 {
-  "name": "harper.dev",
+  "name": "office.harper.dev",
   "owner": {
     "name": "Harper Reed",
     "url": "https://harper.dev"
   },
-  "description": "Harper Reed's personal Claude Code plugin marketplace",
+  "description": "Office productivity plugin for Claude Code - email, calendar, and CRM management",
   "plugins": [
     {
       "name": "office",

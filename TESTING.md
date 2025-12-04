@@ -121,19 +121,19 @@ ls -la ~/.claude/
 
 ```bash
 # Add the cc-office plugin marketplace
-/plugin marketplace add harperreed/cc-office-plugin
+/plugin marketplace add harperreed/office-admin-claude
 ```
 
 **Expected output:**
 ```
-✓ Added marketplace: harperreed/cc-office-plugin
+✓ Added marketplace: harperreed/office-admin-claude
 ```
 
 **Verify:**
 ```bash
 /plugin marketplace list
 ```
-Should show `harperreed/cc-office-plugin` in the list.
+Should show `harperreed/office-admin-claude` in the list.
 
 ### Step 2: Install Plugin
 
@@ -1638,12 +1638,12 @@ For each test session, document:
 
 ## Support and Resources
 
-- **Plugin Issues:** https://github.com/harperreed/cc-office-plugin/issues
+- **Plugin Issues:** https://github.com/harperreed/office-admin-claude/issues
 - **MCP Server Issues:**
   - Pipedream: https://github.com/PipedreamHQ/pipedream/issues
   - Pagen CRM: https://github.com/harperreed/pagen-crm/issues
 - **Claude Code Docs:** https://docs.anthropic.com/claude-code
-- **Community Discussions:** https://github.com/harperreed/cc-office-plugin/discussions
+- **Community Discussions:** https://github.com/harperreed/office-admin-claude/discussions
 
 ---
 

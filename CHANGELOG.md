@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the cc-office-plugin will be documented in this file.
+All notable changes to the office-admin-claude plugin will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -81,4 +81,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced calendar conflict resolution
 - Automated meeting notes generation
 
-[1.0.0]: https://github.com/harperreed/cc-office-plugin/releases/tag/v1.0.0
+[1.0.0]: https://github.com/harperreed/office-admin-claude/releases/tag/v1.0.0

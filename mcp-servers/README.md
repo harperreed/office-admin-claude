@@ -298,7 +298,7 @@ After setting up MCP servers:
 
 For issues and questions:
 
-- **Office plugin:** https://github.com/harperreed/cc-office-plugin/issues
+- **Office plugin:** https://github.com/harperreed/office-admin-claude/issues
 - **Toki:** https://github.com/harperreed/toki/issues
 - **Chronicle:** https://github.com/harperreed/chronicle/issues
 - **Pagen:** https://github.com/harperreed/pagen/issues
